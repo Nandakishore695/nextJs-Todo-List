@@ -65,7 +65,8 @@ export default function Home() {
               <tr key={index}>
                 <td>{index + 1}</td>
                 <td>{todo.task}</td>
-                <td><FaRegEdit size={22} className="ml-4 cursor-pointer" onClick={() => handleEdit(todo.task)} /><MdOutlineDeleteSweep size={28} className="ml-4 " onClick={() => handleRevmove(todo.task)} />
+                <td><FaRegEdit size={22} className="ml-4 cursor-pointer" onClick={() => handleEdit(todo.task)} />
+                  <MdOutlineDeleteSweep size={28} className="ml-4 " onClick={() => handleRevmove(todo.task)} />
                 </td>
               </tr>
             ))}
